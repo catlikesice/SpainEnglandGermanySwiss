@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Marketing Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #003399;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0044cc;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Strategic Marketing Plan</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Comprehensive Strategic Marketing Plan</h1>
+        <p>
+            At <strong>Export Extranjero</strong>, we understand the complexities of entering new markets. 
+            Our Strategic Marketing Plan is designed to provide businesses with the tools and insights necessary to succeed in Spain, Germany, and Great Britain. 
+        </p>
+        <h2>What Our Plan Includes:</h2>
+        <ul>
+            <li><strong>Market Analysis:</strong> A thorough analysis of your target markets, including customer behavior, trends, and key competitors.</li>
+            <li><strong>Customized Marketing Strategies:</strong> Tailored plans to meet the unique needs of your industry and target audience.</li>
+            <li><strong>Brand Positioning:</strong> Strategies to differentiate your brand and create a strong presence in new markets.</li>
+            <li><strong>Campaign Planning:</strong> Detailed plans for online and offline campaigns, from SEO and PPC to social media and email marketing.</li>
+            <li><strong>Performance Tracking:</strong> Metrics and KPIs to measure the success of your campaigns and ensure ROI.</li>
+        </ul>
+
+        <h2>Why Choose Us?</h2>
+        <p>
+            Our team of marketing experts specializes in creating results-driven strategies that maximize your reach and impact.
+            Whether you're expanding into Spain, Germany, or Great Britain, we provide actionable insights and proven tactics to help your business thrive.
+        </p>
+
+        <p>
+            Ready to take your business to the next level? <a href="contact.html" style="color: #0044cc;">Contact us</a> today to learn more about our Strategic Marketing Plan.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Export Extranjero. All rights reserved.</p>
+    </footer>
+</body>
+</html>

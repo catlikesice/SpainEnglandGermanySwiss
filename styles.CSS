@@ -80,7 +80,23 @@ nav {
   background-color: #333;
   padding: 10px 0;
 }
-
+.nav-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Ensures it doesn't stretch too wide */
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto; /* Centers the whole nav */
+    padding: 0 20px; /* Adds spacing on both sides */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Aligns links to the center */
+    width: 100%; /* Makes sure they stay centered */
+}
 nav ul {
   list-style: none;
   padding: 0;

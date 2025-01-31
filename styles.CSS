@@ -80,6 +80,12 @@ nav {
   background-color: #333;
   padding: 10px 0;
 }
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px; /* Moves it slightly right */
+}
 .nav-container {
     display: flex;
     align-items: center;
@@ -96,6 +102,17 @@ nav {
     padding: 0;
     justify-content: center; /* Aligns links to the center */
     width: 100%; /* Makes sure they stay centered */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.nav-links li {
+    margin: 0 15px;
+}
 }
 nav ul {
   list-style: none;

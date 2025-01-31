@@ -168,19 +168,20 @@ nav a:hover {
 .nav-container {
     display: flex;
     align-items: center;
-    max-width: 1200px; /* Ensures it doesn't stretch too wide */
-    width: 100%;
     justify-content: space-between;
-    margin: 0 auto; /* Centers the whole nav */
-    padding: 0 20px; /* Adds spacing on both sides */
+    background-color: #004080;
+    padding: 15px 20px;
 }
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 20px;
     margin: 0;
     padding: 0;
-    justify-content: center; /* Aligns links to the center */
-    width: 100%; /* Makes sure they stay centered */
+}
+.nav-links li {
+    display: inline;
+}
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -188,9 +189,6 @@ nav a:hover {
 }
 .nav-links a:hover {
     text-decoration: underline;
-}
-.nav-links li {
-    margin: 0 15px;
 }
 }
 nav ul {

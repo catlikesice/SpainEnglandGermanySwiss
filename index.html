@@ -67,20 +67,20 @@
       background-color: #1e3c72;
 .menu-btn {
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #004080;
     color: white;
     border: none;
     cursor: pointer;
-    position: absolute;
-    top: 15px;
+    position: fixed; /* Keeps it visible */
+    top: 10px;
     left: 15px;
-    transition: 0.3s;
+    z-index: 1000;
     border-radius: 5px;
+    transition: background 0.3s ease;
 }
-          .menu-btn:hover {
+.menu-btn:hover {
     background-color: #003366;
-}
     }
 * {
     margin: 0;

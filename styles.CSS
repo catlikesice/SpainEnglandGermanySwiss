@@ -8,7 +8,6 @@ Edit
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -73,18 +72,22 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px 0;
-nav {
-  display: flex;
-  justify-content: center; /* Centers items horizontally */
-  background-color: #333;
-  padding: 10px 0;
 }
+
+nav {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    background-color: #333;
+    padding: 10px 0;
+}
+
 .logo {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
     margin-left: 20px; /* Moves it slightly right */
 }
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -94,6 +97,7 @@ nav {
     margin: 0 auto; /* Centers the whole nav */
     padding: 0 20px; /* Adds spacing on both sides */
 }
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -101,33 +105,35 @@ nav {
     padding: 0;
     justify-content: center; /* Aligns links to the center */
     width: 100%; /* Makes sure they stay centered */
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
+
 .nav-links a:hover {
     text-decoration: underline;
 }
-.nav-links li {
-    margin: 0 15px;
-}
-}
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; /* Makes the items display in a row */
-  gap: 20px; /* Adds spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the items display in a row */
+    gap: 20px; /* Adds spacing between items */
 }
-
 nav ul li {
-  display: inline;
+    display: inline;
 }
 nav ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
 }
 
 

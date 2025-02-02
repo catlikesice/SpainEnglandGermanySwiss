@@ -3,7 +3,6 @@ css
 Copy
 Edit
 /* General Reset */
-<style>
 * {
     margin: 0;
     padding: 0;
@@ -130,5 +129,5 @@ nav ul li a {
   color: white;
   padding: 10px 15px;
 }
-</style>
+
 

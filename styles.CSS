@@ -2,6 +2,13 @@ CSS (styles.css)
 css
 Copy
 Edit
+/* Variables */
+:root {
+    --primary-color: #004080;
+    --secondary-color: #003366;
+    --white: #ffffff;
+    --font-size: 18px;
+}
 /* General Reset */
 * {
     margin: 0;
@@ -50,15 +57,24 @@ main {
 
 /* Features Section */
 .features {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     .feature {
-        background-color: #e9ecef;
-        padding: 20px;
-        border-radius: 8px;
-        width: 48%;
+         background: var(--white);
+         border: 1px solid #ddd;
+         padding: 20px;
+         margin: 10px;
+         flex: 1 1 calc(33.333% - 40px); /* Adjusting for margin */
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    .feature h3 {
+        margin-bottom: 10px;
+     }
+    .feature p {
+       margin: 0;
+     }
 
         h3 {
             margin-bottom: 10px;
@@ -69,10 +85,13 @@ main {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white);
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Navigation */

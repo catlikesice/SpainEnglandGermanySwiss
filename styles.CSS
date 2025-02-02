@@ -81,6 +81,12 @@ nav {
     justify-content: center; /* Centers items horizontally */
     background-color: #333;
     padding: 10px 0;
+    position: fixed; /* Keeps it fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures it spans the entire width of the viewport */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
 
     .logo {
         font-size: 1.5rem;
@@ -99,28 +105,28 @@ nav {
         padding: 0 20px; /* Adds spacing on both sides */
     }
 
-    .nav-links {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: center; /* Aligns links to the center */
-        width: 100%; /* Makes sure they stay centered */
+   .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Aligns links to the center */
+    width: 100%; /* Makes sure they stay centered */
 
-        li {
-            margin: 0 15px;
+    li {
+        margin: 0 15px;
 
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 1rem;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
 
-                &:hover {
-                    text-decoration: underline;
-                }
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
+}
 
     ul {
         list-style: none;

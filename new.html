@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercialícelo al Extranjero</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #fff;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #cfd8dc;
+        }
+        /* Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        /* Button Styling */
+        .btn {
+            background-color: #2a5298;
+            color: #fff;
+            padding: 10px 25px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #1e3c72;
+        }
+       .menu-btn {
+            font-size: 18px;
+            padding: 12px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: fixed; /* Keeps it visible */
+            top: 10px;
+            left: 15px;
+            z-index: 1000;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            display: none; /* Hide by default */
+        }
+        .menu-btn:hover {
+            background-color: #003366;
+        }
+        /* Media Query for larger screens */
+        @media (min-width: 1024px) {
+            .menu-btn {
+                display: block; /* Show only on larger screens */
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        header h1 {
+            text-align: center;
+        }
+        main {
+            padding: 40px 0;
+            background-color: #fff;
+            color: #333;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #444;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .feature {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            width: 48%;
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav {
+            background-color: #004080;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #004080;
+            padding: 15px 20px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #004080;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding-top: 60px;
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .sidenav a {
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            display: none;
+            position: fixed;
+            top: 50px;
+            left: 15px;
+            background-color: #004080;
+            border: 1px solid #003366;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .dropdown-menu a:hover {
+            background-color: #003366;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .feature {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 8px;
+            width: 45%;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #fff;
+        }
+        .feature p {
+            color: #cfd8dc;
+        }
+        section {
+            margin-bottom: 20px; /* Adjusted spacing between sections */
+        }
+        section h2, section h3 {
+            margin-bottom: 10px;
+        }
+        section p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: disc inside;
+            margin-left: 20px;
+            color: #cfd8dc;
+        }
+        ul li {
+            margin-bottom: 10px; /* Adjusted spacing between list items */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Our business</h1>
+        </div>
+    </header>
+    <button class="menu-btn" onclick="toggleDropdown()">☰ Menu</button>
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#strategic-marketing-plan">Strategic Marketing Plan</a>
+        <a href="#seo-optimization">SEO Optimization</a>
+        <a href="#social-media-marketing">Social Media Marketing</a>
+    </div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Comercialícelo al Extranjero</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="intro">
+        <div class="container">
+            <h2>Your Partner for International Success</h2>
+            <p>At <strong>Comercialícelo al extranjero</strong>, we specialize in helping Spanish businesses expand their reach and thrive in the competitive markets of <strong>Germany</strong>,...</p>
+            <p>With a deep understanding of the cultural nuances, consumer behavior, and market trends in these countries, we create tailored marketing strategies that resonate with your target audiences.</p>
+            <h3>What We Offer</h3>
+            <ul>
+                <li>Strategic Marketing Plans tailored to German, British, Swiss, and American markets</li>
+                <li>SEO Optimization for visibility on local search engines</li>
+                <li>Social Media Marketing aligned with cultural preferences</li>
+            </ul>
+        </div>
+    </section>
+    <section class="why-choose-us">
+        <div class="container">
+            <h3>Why Choose Us?</h3>
+            <p>We don't just market products; we create connections. By combining global expertise with a local touch, we ensure that your brand speaks directly to the hearts of your new audiences.</p>
+            <p>Are you ready to take your business international? Let’s make it happen—together.</p>
+            <p>Helping businesses expand beyond borders with tailored, data-driven marketing strategies—expertly designed to penetrate German, British, Swiss and American markets.</p>
+            <p><strong>Contact us today</strong> to learn how ¡Exporta al extranjero!!</p>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <h2>Your Partner for International Success</h2>
+            <p>At <strong>Comercialícelo al extranjero</strong>, we specialize in helping Spanish businesses expand their reach and thrive in the competitive markets of <strong>Germany</strong>,...</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Comercialícelo al Extranjero. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            if (dropdownMenu.style.display === "block") {
+                dropdownMenu.style.display = "none"; // Hides menu
+            } else {
+                dropdownMenu.style.display = "block"; // Shows menu
+            }
+        }
+    </script>
+</body>
+</html>

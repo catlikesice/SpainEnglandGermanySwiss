@@ -157,11 +157,9 @@ nav {
     transition: background 0.3s ease;
     display: none; /* Hide by default */
 }
-
 .menu-btn:hover {
     background-color: #003366;
 }
-
 /* Media Query for larger screens */
 @media (min-width: 1024px) {
     .menu-btn {

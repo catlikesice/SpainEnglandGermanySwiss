@@ -1,5 +1,5 @@
-CSS (styles.css)
-css
+SCSS (styles.scss)
+scss
 Copy
 Edit
 /* Variables */
@@ -26,7 +26,6 @@ body {
   /* Styles from new.html */
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   font-family: 'Poppins', sans-serif;
-  margin: 0;
   color: #fff;
 }
 
@@ -229,7 +228,4 @@ ul {
   &:hover {
     background-color: #1e3c72;
   }
-}
-.btn:hover {
-    background-color: #1e3c72;
 }

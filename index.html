@@ -63,17 +63,34 @@
         </div>
     </footer>
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Document loaded");
+            var menuButton = document.querySelector(".menu-btn");
+            var dropdownMenu = document.getElementById("dropdownMenu");
+
+            menuButton.addEventListener("click", function() {
+                console.log("Menu button clicked");
+                console.log("Current display style:", window.getComputedStyle(dropdownMenu).display);
+                if (dropdownMenu.style.display === "flex") {
+                    dropdownMenu.style.display = "none"; // Hides menu
+                } else {
+                    dropdownMenu.style.display = "flex"; // Shows menu
+                }
+                console.log("New display style:", dropdownMenu.style.display);
+            });
+        });
+
         function toggleDropdown() {
-    console.log("toggleDropdown called"); // Log message
-    var dropdownMenu = document.getElementById("dropdownMenu");
-    console.log("Current display style:", window.getComputedStyle(dropdownMenu).display);
-    if (dropdownMenu.style.display === "flex") {
-        dropdownMenu.style.display = "none"; // Hides menu
-    } else {
-        dropdownMenu.style.display = "flex"; // Shows menu
-    }
-    console.log("New display style:", dropdownMenu.style.display);
-}
+            console.log("toggleDropdown called"); // Log message
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            console.log("Current display style:", window.getComputedStyle(dropdownMenu).display);
+            if (dropdownMenu.style.display === "flex") {
+                dropdownMenu.style.display = "none"; // Hides menu
+            } else {
+                dropdownMenu.style.display = "flex"; // Shows menu
+            }
+            console.log("New display style:", dropdownMenu.style.display);
+        }
     </script>
 </body>
 </html>

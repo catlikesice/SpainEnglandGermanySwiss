@@ -153,7 +153,7 @@ ul {
     left: 15px;
     border-radius: 5px;
     transition: background 0.3s ease;
-    display: block; /* Always show the button */
+    display: flex; /* Always show the button */
 }
 .menu-btn:hover {
     background-color: #003366;

@@ -20,13 +20,12 @@ Edit
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-
-  /* Styles from new.html */
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: scroll; /* Enable vertical scrolling */
 }
 
 .container {
@@ -34,7 +33,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 20px;
-  text-align: center;
+  text-align: left; /* Aligns text to the left */
 }
 
 /* Header */
@@ -50,16 +49,28 @@ header {
 
 /* Main Section */
 main {
-  padding: 40px 0;
+  flex: 1;
+  padding: 40px 20px;
   background-color: #fff;
+  color: #333; /* Ensure text color is dark in main content */
 
   h2 {
-    margin-bottom: 15px;
+    margin: 20px 0;
     color: #444;
   }
 
   p {
-    margin-bottom: 20px;
+    margin: 20px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -93,10 +104,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--white);
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 20px 0;
 }
 
 /* Navigation */
@@ -194,7 +202,7 @@ ul {
 .dropdown-menu {
   display: none;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 50px;
   left: 15px;
   background-color: #004080;

@@ -2,13 +2,6 @@ CSS (styles.css)
 css
 Copy
 Edit
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Variables */
 :root {
     --primary-color: #004080;

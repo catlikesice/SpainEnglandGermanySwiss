@@ -2,6 +2,13 @@ CSS (styles.css)
 css
 Copy
 Edit
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Variables */
 :root {
     --primary-color: #004080;
@@ -9,12 +16,8 @@ Edit
     --white: #ffffff;
     --font-size: 18px;
 }
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+/* General Styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -22,20 +25,22 @@ html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-y: scroll;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px; /* Adds padding to the container */
-    text-align: left; /* Aligns text to the left */
+    padding: 20px;
+    text-align: left;
 }
+
 /* Header */
 header {
     background-color: #333;
@@ -43,101 +48,119 @@ header {
     padding: 20px 0;
     text-align: center;
 }
+
+/* Main */
 main {
     flex: 1;
-    padding: 40px 20px; /* Adds padding to the main section */
+    padding: 40px 20px;
     background-color: #fff;
-    color: #333; /* Ensure text color is dark in main content */
+    color: #333;
 }
+
 main .container {
-    text-align: left; /* Aligns text to the left */
+    text-align: left;
 }
+
 main h2 {
-    margin: 20px 0; /* Adds margin to the headers */
+    margin: 20px 0;
     color: #444;
 }
+
 main p {
-    margin: 20px 0; /* Adds margin to the paragraphs */
+    margin: 20px 0;
 }
+
 main ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0; /* Adds margin to the list */
+    margin: 20px 0;
 }
+
 main ul li {
     margin-bottom: 10px;
 }
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
-    padding: 20px 0; /* Adds padding to the footer */
+    padding: 20px 0;
 }
+
 /* Navigation */
 nav {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
+    justify-content: center;
     background-color: #333;
     padding: 10px 0;
-    position: fixed; /* Keeps it fixed at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Ensures it spans the entire width of the viewport */
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    width: 100%;
+    z-index: 1000;
 }
+
 .logo {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
-    margin-left: 20px; /* Moves it slightly right */
+    margin-left: 20px;
 }
+
 .nav-container {
     display: flex;
     align-items: center;
-    max-width: 1200px; /* Ensures it doesn't stretch too wide */
+    max-width: 1200px;
     width: 100%;
     justify-content: space-between;
-    margin: 0 auto; /* Centers the whole nav */
-    padding: 0 20px; /* Adds spacing on both sides */
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: center; /* Aligns links to the center */
-    width: 100%; /* Makes sure they stay centered */
+    justify-content: center;
+    width: 100%;
 }
+
 .nav-links li {
     margin: 0 15px;
 }
+
 .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
+
 .nav-links a:hover {
     text-decoration: underline;
 }
+
 /* Menu Button */
 .menu-btn {
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    z-index: 1000;
     font-size: 18px;
     padding: 12px 20px;
     background-color: #004080;
     color: white;
     border: none;
     cursor: pointer;
-    position: fixed; /* Keeps it visible */
+    position: fixed;
     top: 10px;
     left: 15px;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
+
 .menu-btn:hover {
     background-color: #003366;
 }
+
 /* Dropdown Menu */
 .dropdown-menu {
     display: none;
@@ -151,15 +174,18 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 999;
 }
+
 .dropdown-menu a {
     display: block;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
 }
+
 .dropdown-menu a:hover {
     background-color: #003366;
 }
+
 /* Card Styling */
 .card {
     background-color: rgba(255, 255, 255, 0.1);
@@ -169,10 +195,12 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 /* Button Styling */
 .btn {
     background-color: #2a5298;
@@ -185,6 +213,7 @@ nav {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
+
 .btn:hover {
     background-color: #1e3c72;
 }

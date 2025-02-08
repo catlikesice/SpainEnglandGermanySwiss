@@ -65,19 +65,6 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuButton = document.querySelector(".menu-btn");
-            var dropdownMenu = document.getElementById("dropdownMenu");
-
-            menuButton.addEventListener("click", function() {
-                if (dropdownMenu.style.display === "flex") {
-                    dropdownMenu.style.display = "none"; // Hides menu
-                } else {
-                    dropdownMenu.style.display = "flex"; // Shows menu
-                }
-            });
-        });
-
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");
             if (dropdownMenu.style.display === "flex") {
